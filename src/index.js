@@ -12,9 +12,9 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use('/', authRoutes);
+// app.use('/', authRoutes);
 
-app.use(trackRoutes);
+// app.use(trackRoutes);
 
 const mongoUri =
   "mongodb+srv://admin:passwordpassword@cluster0.i7auj.mongodb.net/test?retryWrites=true&w=majority";
