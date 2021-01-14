@@ -6,6 +6,8 @@ const requireAuth = require('./middlewares/requireAuth');
 const authRoutes = require('./routes/authRoutes');
 const trackRoutes = require('./routes/trackRoutes');
 
+const port = process.env.PORT || 3000;
+
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -40,4 +42,4 @@ app.get("/", (req, res) => {
   res.send(`This is Home Page`);
 });
 
-app.listen(3000, () => console.log(`Listening on port no 3000`));
+app.listen(port, () => console.log(`Listening on port no ${port}`));
